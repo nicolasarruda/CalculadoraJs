@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="cssdir/css.css">
+	<!--------->
+	<title>Calculadora</title>
+</head>
+<body>
+	<div id="div1">
+	<div id="div2">
+		<center>
+		<br>
+		<p class="titulo">Calculadora Histórica</p>
+		<img src="cssdir/imagens/pergaminho4.png">
+		<p style="font-family: Arial">Selecione o país ou o continente:</p>
+		
+	</center>
+	</div>
+		<form action="form_calc_ler_dados.php" name="calculadora" method="POST">
+			<div>
+				<center>
+					<select name="select">
+						<option name="s1" value=""></option>
+						<option name="s2" value="Brasil">Brasil</option>
+						<option name="s3" value="Europa">Europa</option>
+					</select>
+				</center>
+			</div>
+			<br><br>
+		<div id="div3">
+			<br>
+				<center>
+					<div>
+						<input class="visor" readonly="true" type="text" name="visor" value=""  id="visor" size="28">
+						<input class="visor" style="display: none;" readonly="true" type="text" name="visor1"  id="visor1" size="28">
+						<input class="visor" style="display: none;" readonly="true" type="text" name="visor2"  id="visor2" size="28">
+					</div>
+						<br><br><br><br>
+						<div class="c">
+							<input class="c c1 c2" type="button" name="btn7" value="7" onclick="btn(value)">
+							
+							<input class="c c1 c3" type="button" name="btn8" value="8" onclick="btn(value)">
+							
+							<input class="c c1 c3" type="button" name="btn9" value="9" onclick="btn(value)">
+						
+							<input class="c c1 c3" type="button" name="operador[]" value="EXP" onclick="btnbtnSymbol(value)">
+						
+							<input class="c c1 c3" type="reset" name="bDEL" value="DEL" onclick="reset()">	
+						</div>
+						<br><br>
+						<div class="c">
+							<input class="c c1 c2" type="button" name="btn4" value="4" onclick="btn(value)">
+							
+							<input class="c c1 c3" type="button" name="btn5" value="5" onclick="btn(value)">
+						
+							<input class="c c1 c3" type="button" name="btn6" value="6" onclick="btn(value)">
+						
+							<input class="c c1 c3" type="button" name="operador[]" value="x" onclick="btnSymbol(value)">
+						
+							<input class="c c1 c3" type="button" name="operador[]" value="÷" onclick="btnSymbol(value)">
+							
+						</div>
+						<br><br>
+						<div class="c">
+							<input class="c c1 c2" type="button" name="btn1" value="1" onclick="btn(value)">
+							
+							<input class="c c1 c3" type="button" name="btn2" value="2" onclick="btn(value)">
+							
+							<input class="c c1 c3" type="button" name="btn3" value="3" onclick="btn(value)">
+						
+							<input class="c c1 c3" type="button" name="operador[]" value="+" onclick="btnSymbol(value)">
+					
+							<input class="c c1 c3" type="button" name="neg" value="-" onclick="btnSymbol(value)">		
+						</div>
+						<br><br>
+						<div class="c">
+							<input class="c c1 c4" type="button" name="btn0" value="0" onclick="btn(value)">
+							
+							<input class="c c1 c4" type="submit" name="bEq" value="=" id="result" onclick="btnResult()">	
+						</div>
+					</center>
+				<br>
+		</div>
+	</form>
+</div>
+<br><br><br>
+
+<p style="font-family: Arial;">Clique aqui para alternar o ecrã:</p>
+<input type="button" value="Alternar" onclick="toggleFullScreen()">
+
+</body>
+<footer>
+	<!-- Javascript -->
+	<script src="jscript/calculadora.js"></script>
+
+	<!--  -->
+</footer>
+</html>

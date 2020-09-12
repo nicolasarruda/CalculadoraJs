@@ -1,0 +1,98 @@
+/*--------CSS--------*/
+a{
+	text-decoration: none;
+	cursor: default;
+	color: black;
+	font-family: Arial;
+	}
+
+.titulo{
+	font-weight: bolder;
+	font-family: Palace Script MT;
+	font-size: 100px;
+}
+
+select{
+
+}
+.visor{
+	background-color: #8e72fd;
+	height: 70px;
+	font-size: 20px;
+	border-radius: 20px;
+	outline: none;
+}
+
+.c{
+	margin-right: 15px;
+	border-radius: 20px;	
+	outline: none;	
+	}
+
+.c1:hover {
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	transform: scale(0.9);
+	transition: ease 0.50s;
+	outline: none;
+	}
+
+.c2 {
+	height: 50px;
+	width: 50px;
+	margin-left: 10px;
+	border-radius: 20px;
+	outline: none;
+	}
+
+.c3 {
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	outline: none;
+	}
+		
+.c4{
+	height: 50px; 
+	width: 120px;
+	border-radius: 20px;
+	outline: none;
+	}
+
+.c5 {
+	background-image: url('cssdir/imagens/imagempergaminho2.jpg');
+	background-size: 100% 100%;
+	margin-right: 10%; 
+	margin-left: 10%;
+	background-repeat: no-repeat;
+	}
+
+.c6{
+	font-family: Palace Script MT;
+	font-size: 90px;
+}
+
+#div1{
+	
+}
+
+#div2{
+
+}
+		
+#div3 {
+	background-image: url("imagens/historia.jpg");
+	background-repeat: no-repeat;
+	background-position: 100% ;
+	background-size: 100% 100%;
+	border: solid 5px; 
+	border-color: #000;
+	margin-left: 35.0%;
+	margin-right: 35.0%;
+	border-radius: 20px;
+	}
+
+div#div4 img{
+	
+}
